@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archie logros</title>
+    <link rel="stylesheet" href="estilosweb.css">
+    <script src="datos.js" defer></script>
+    <script src="menus.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="archie.html"><h1>Archie</h1></a>
+        <img src="images/user_image.png" alt="Imagen de usuario" class="user-image">
+        <div class="user-dropdown">
+            <ul class="categories dropdown-content">
+                <li><a href="logros.html">Registro de Logros</a></li>
+                <li><a href="datos_personales.html">Datos Personales</a></li>
+                <li><a href="amigos.html">Amigos</a></li>
+                <li><a href="index.html">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <div class="sidebar">
+            <button class="dropdown-btn">Categorías</button>
+            <ul class="categories dropdown-content">
+                <li><a href="notas.html">Notas</a></li>
+                <li><a href="asistencia.html">Asistencia</a></li>
+                <li><a href="entregas.html">Entregas</a></li>
+                <li><a href="meritos.html">Méritos</a></li>
+            </ul>
+        </div>
+        <h2>Añadir notas</h2>
+        <section class="notes-container">
+            <form id="nota-form">
+                <div class="form-group">
+                    <label for="fisica1">Física</label>
+                    <input type="number" id="fisica1" name="fisica1" min="0" max="10" step="0.1">
+                    <input type="number" id="fisica2" name="fisica2" min="0" max="10" step="0.1">
+                </div>
+
+                <div class="form-group">
+                    <label for="biologia1">Biología</label>
+                    <input type="number" id="biologia1" name="biologia1" min="0" max="10">
+                    <input type="number" id="biologia2" name="biologia2" min="0" max="10">
+                </div>
+
+                <div class="form-group">
+                    <label for="matematicas1">Matemáticas</label>
+                    <input type="number" id="matematicas1" name="matematicas1" min="0" max="10">
+                    <input type="number" id="matematicas2" name="matematicas2" min="0" max="10">
+                </div>
+          
+                <div class="form-group">
+                    <label for="historia1">Historia</label>
+                    <input type="number" id="historia1" name="historia1" min="0" max="10">
+                    <input type="number" id="historia2" name="historia2" min="0" max="10">
+                </div>
+
+                <div class="form-group">
+                    <label for="english1">English</label>
+                    <input type="number" id="english1" name="english1" min="0" max="10">
+                    <input type="number" id="english2" name="english2" min="0" max="10">
+                </div>
+
+                <div class="form-group">
+                    <label for="castellano1">Castellano</label>
+                    <input type="number" id="castellano1" name="castellano1" min="0" max="10">
+                    <input type="number" id="castellano2" name="castellano2" min="0" max="10">
+                </div>
+
+                <div class="form-group">
+                    <label for="catala1">Català</label>
+                    <input type="number" id="catala1" name="catala1" min="0" max="10">
+                    <input type="number" id="catala2" name="catala2" min="0" max="10">
+                </div>
+
+                <div class="form-group">
+                    <label for="optativa1_1">Optativa 1</label>
+                    <input type="number" id="optativa1_1" name="optativa1_1" min="0" max="10">
+                    <input type="number" id="optativa1_2" name="optativa1_2" min="0" max="10">
+                </div>
+
+                <button type="submit" id="guardarNotasBtn">Guardar</button>
+            </form>
+        </section>
+
+        <h2>Logros ganados</h2>
+        <section class="achievements-container">
+            <h2>Logros ganados</h2>
+            <ul id="logrosGanados"></ul>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>Proyecto 3 2024 // Archie </p>
+    </footer>
+</body>
+</html>
